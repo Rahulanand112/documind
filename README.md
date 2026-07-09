@@ -1,4 +1,4 @@
-# DocuMind — RAG-based Document Q\&A Assistant
+# DocuMind — RAG-based Document Q&A Assistant
 
 Upload documents (PDF/TXT) and ask questions about them in natural language.
 Answers are generated using Retrieval-Augmented Generation (RAG): relevant
@@ -17,23 +17,23 @@ from memory.
 
 
 
-**## Demo**
+## Demo
 
 
 
-**\*\*Answering questions with cited sources:\*\***
+**Answering questions with cited sources:**
 
 
 
-!\[Education Q\&A with citations](screenshots/education-demo.png)
+![Education Q&A with citations](screenshots/education-demo.png)
 
 
 
-\*\*Multi-turn conversation memory (follow-up question "he" correctly resolves to the person from the prior answer):\*\*
+**Multi-turn conversation memory (follow-up question "he" correctly resolves to the person from the prior answer):**
 
 
 
-!\[Conversation memory demo](screenshots/conversation-memory-demo.png)
+![Conversation memory demo](screenshots/conversation-memory-demo.png)
 
 ### Why hybrid search instead of just vector search?
 
@@ -105,7 +105,7 @@ documind/
 
 ## Resume bullet points (for reference)
 
-* Built a full-stack RAG (Retrieval-Augmented Generation) application enabling multi-turn, natural-language Q\&A over user-uploaded documents, with cited sources.
+* Built a full-stack RAG (Retrieval-Augmented Generation) application enabling multi-turn, natural-language Q&A over user-uploaded documents, with cited sources.
 * Implemented hybrid search combining vector similarity (sentence-transformer embeddings + ChromaDB) with BM25 keyword ranking, merged via Reciprocal Rank Fusion, improving retrieval robustness over semantic search alone.
 * Designed a conversational query-rewriting step ("condense question" pattern) so follow-up questions resolve correctly using prior conversation context.
 * Engineered a REST API (FastAPI) handling file ingestion, chunking, dual-index storage (vector + keyword), and LLM-based answer generation.
@@ -115,4 +115,6 @@ documind/
 
 * Free Groq API tier has rate limits; fine for demos and interviews.
 * ChromaDB here is used in local/persistent mode — for production scale, consider a managed vector DB (Pinecone, Weaviate, or pgvector).
+
+
 
